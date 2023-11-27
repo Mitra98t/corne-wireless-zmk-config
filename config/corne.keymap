@@ -53,8 +53,8 @@
         layer_4 {
             bindings = <
 &trans  &trans  &trans  &trans  &trans  &trans    &trans     &trans            &trans                  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &kp LG(D)  &kp LC(UP_ARROW)  &kp LC(LS(UP_ARROW))    &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &kp LG(F)  &kp LC(DOWN)      &kp LS(LC(DOWN_ARROW))  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &kp LG(D)  &kp LA(UP_ARROW)  &kp LA(LS(UP_ARROW))    &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &kp LG(F)  &kp LA(DOWN)      &kp LA(LS(DOWN_ARROW))  &trans  &trans  &trans
                         &trans  &trans  &trans    &kp ENTER  &trans            &trans
             >;
         };
