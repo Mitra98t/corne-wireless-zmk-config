@@ -121,10 +121,10 @@
 
         numbers {
             bindings = <
-&trans  &trans  &trans  &trans  &l_Lambda   &d_Delta        &kp EQUAL  &kp NUMBER_7    &kp NUMBER_8  &kp NUMBER_9  &trans     &trans
-&trans  &trans  &trans  &trans  &subset_eq  &implication    &kp PLUS   &kp NUMBER_4    &kp N5        &kp NUMBER_6  &kp STAR   &trans
-&trans  &trans  &trans  &trans  &trans      &trans          &kp MINUS  &kp NUMBER_1    &kp NUMBER_2  &kp NUMBER_3  &kp SLASH  &trans
-                        &trans  &trans      &trans          &trans     &kp LEFT_SHIFT  &kp NUMBER_0
+&trans  &trans  &trans  &trans  &trans  &trans    &kp EQUAL  &kp NUMBER_7    &kp NUMBER_8  &kp NUMBER_9  &trans     &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &kp PLUS   &kp NUMBER_4    &kp N5        &kp NUMBER_6  &kp STAR   &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &kp MINUS  &kp NUMBER_1    &kp NUMBER_2  &kp NUMBER_3  &kp SLASH  &trans
+                        &trans  &trans  &trans    &trans     &kp LEFT_SHIFT  &kp NUMBER_0
             >;
         };
 
