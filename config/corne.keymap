@@ -34,10 +34,10 @@
 
         layer_2 {
             bindings = <
-&trans  &trans  &trans  &trans          &trans    &trans       &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp AMPERSAND  &kp PIPE       &kp PERCENT  &kp BACKSPACE
-&trans  &trans  &trans  &trans          &trans    &trans       &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &kp EXCL       &kp EQUAL      &kp HASH     &kp AT
-&trans  &trans  &trans  &trans          &trans    &trans       &kp LEFT_BRACE        &kp RIGHT_BRACE        &kp SLASH      &kp BACKSLASH  &kp CARET    &kp ESC
-                        &kp LEFT_SHIFT  &kp LCMD  &kp SPACE    &kp ENTER             &kp UNDER              &kp DOLLAR
+&trans  &kp AT     &kp CARET  &kp MINUS       &kp PLUS          &kp STAR                &kp SLASH              &kp BACKSLASH      &kp HASH         &kp PERCENT        &trans        &trans
+&trans  &kp COLON  &kp UNDER  &kp LESS_THAN   &kp GT            &kp PIPE                &kp AMPERSAND          &kp EXCL           &kp EQUAL        &kp DOLLAR         &kp SEMI      &kp TILDE
+&trans  &kp GRAVE  &kp APOS   &kp LEFT_BRACE  &kp LEFT_BRACKET  &kp LEFT_PARENTHESIS    &kp RIGHT_PARENTHESIS  &kp RIGHT_BRACKET  &kp RIGHT_BRACE  &kp DOUBLE_QUOTES  &kp QUESTION  &trans
+                              &trans          &trans            &trans                  &trans                 &trans             &trans
             >;
         };
 
@@ -47,15 +47,6 @@
 &trans        &trans        &trans        &trans          &trans        &trans          &kp C_VOLUME_DOWN     &kp C_VOLUME_UP       &kp UP_ARROW                       &kp C_PREVIOUS                          &kp C_PLAY_PAUSE  &kp C_NEXT
 &out OUT_TOG  &trans        &trans        &trans          &trans        &trans          &kp K_MUTE            &kp LEFT              &kp DOWN                           &kp RIGHT                               &kp LEFT_ALT      &trans
                                           &kp LEFT_SHIFT  &kp LEFT_GUI  &kp SPACE       &kp ENTER             &trans                &trans
-            >;
-        };
-
-        layer_4 {
-            bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans    &trans     &trans            &trans                  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &kp LG(D)  &kp LA(UP_ARROW)  &kp LA(LS(UP_ARROW))    &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &kp LG(F)  &kp LA(DOWN)      &kp LA(LS(DOWN_ARROW))  &trans  &trans  &trans
-                        &trans  &trans  &trans    &kp ENTER  &trans            &trans
             >;
         };
     };
