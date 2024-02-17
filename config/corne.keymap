@@ -68,44 +68,6 @@
         };
     };
 
-    behaviors {
-        d_Delta: d_Delta {
-            compatible = "zmk,behavior-mod-morph";
-            label = "D_DELTA";
-            bindings = <&delta>, <&Delta>;
-
-            #binding-cells = <0>;
-            mods = <(MOD_LSFT|MOD_RSFT)>;
-        };
-
-        l_Lambda: l_Lambda {
-            compatible = "zmk,behavior-mod-morph";
-            label = "L_LAMBDA";
-            bindings = <&lambda>, <&Lambda>;
-
-            #binding-cells = <0>;
-            mods = <(MOD_LSFT|MOD_RSFT)>;
-        };
-
-        implication: implication {
-            compatible = "zmk,behavior-mod-morph";
-            label = "IMPLICATION";
-            bindings = <&RightArrow>, <&iff>;
-
-            #binding-cells = <0>;
-            mods = <(MOD_LSFT|MOD_RSFT)>;
-        };
-
-        subset_eq: subset_eq {
-            compatible = "zmk,behavior-mod-morph";
-            label = "SUBSET_EQ";
-            bindings = <&subset>, <&subseteq>;
-
-            #binding-cells = <0>;
-            mods = <(MOD_LSFT|MOD_RSFT)>;
-        };
-    };
-
     keymap {
         compatible = "zmk,keymap";
 
