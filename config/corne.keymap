@@ -28,7 +28,7 @@
 &trans  &trans  &trans  &trans      &trans     &trans    &kp EQUAL  &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &trans     &trans
 &trans  &trans  &trans  &kp PERIOD  &kp COMMA  &trans    &kp PLUS   &kp NUMBER_4  &kp N5        &kp NUMBER_6  &kp STAR   &trans
 &trans  &trans  &trans  &trans      &trans     &trans    &kp MINUS  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp SLASH  &trans
-                        &trans      &trans     &trans    &trans     &mo 4         &kp NUMBER_0
+                        &trans      &mo 5      &trans    &trans     &mo 4         &kp NUMBER_0
             >;
         };
 
@@ -56,6 +56,15 @@
 &trans  &kp LG(Q)  &kp LG(S)  &kp LG(D)  &kp LG(F)  &kp LG(LC(F))    &trans  &kp LA(LEFT_ARROW)    &kp LA(DOWN_ARROW)  &kp LA(RIGHT)  &trans  &trans
 &trans  &kp LG(Z)  &kp LG(X)  &kp LG(C)  &kp LG(V)  &trans           &trans  &trans                &trans              &trans         &trans  &trans
                               &trans     &trans     &trans           &trans  &trans                &trans
+            >;
+        };
+
+        function {
+            bindings = <
+&trans  &trans  &trans  &trans  &trans  &trans    &kp F1  &kp F2   &kp F3   &kp F4   &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &kp F5  &kp F6   &kp F7   &kp F8   &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &kp F9  &kp F10  &kp F11  &kp F12  &trans  &trans
+                        &trans  &trans  &trans    &trans  &trans   &trans
             >;
         };
     };
