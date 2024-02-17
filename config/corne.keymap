@@ -10,6 +10,20 @@
 #include <dt-bindings/zmk/outputs.h>
 
 / {
+    combos {
+        compatible = "zmk,combos";
+
+        layer4 {
+            bindings = <&mo 4>;
+            key-positions = <38 40>;
+        };
+
+        layer5 {
+            bindings = <&mo 5>;
+            key-positions = <38 41>;
+        };
+    };
+
     keymap {
         compatible = "zmk,keymap";
 
@@ -28,7 +42,7 @@
 &trans  &trans  &trans  &trans      &trans     &trans    &kp EQUAL  &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &trans     &trans
 &trans  &trans  &trans  &kp PERIOD  &kp COMMA  &trans    &kp PLUS   &kp NUMBER_4  &kp N5        &kp NUMBER_6  &kp STAR   &trans
 &trans  &trans  &trans  &trans      &trans     &trans    &kp MINUS  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp SLASH  &trans
-                        &trans      &mo 5      &trans    &trans     &mo 4         &kp NUMBER_0
+                        &trans      &trans     &trans    &trans     &trans        &kp NUMBER_0
             >;
         };
 
