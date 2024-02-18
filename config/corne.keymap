@@ -15,7 +15,7 @@
     keymap {
         compatible = "zmk,keymap";
 
-        default {
+        mac_default {
             label = "Base";
             bindings = <
 &kp TAB           &kp Q  &kp W  &kp E           &kp R     &kp T          &kp Y        &kp U        &kp I       &kp O    &none     &kp BACKSPACE
@@ -25,7 +25,7 @@
             >;
         };
 
-        numbers {
+        mac_numbers {
             bindings = <
 &trans  &trans  &trans  &trans      &trans     &trans    &kp EQUAL  &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &trans     &trans
 &trans  &trans  &trans  &kp PERIOD  &kp COMMA  &trans    &kp PLUS   &kp NUMBER_4  &kp N5        &kp NUMBER_6  &kp STAR   &trans
@@ -34,7 +34,7 @@
             >;
         };
 
-        symbols {
+        mac_symbols {
             bindings = <
 &trans  &kp AT     &kp CARET  &kp MINUS       &kp PLUS          &kp STAR                &kp SLASH              &kp BACKSLASH      &kp HASH         &kp PERCENT        &trans        &trans
 &trans  &kp COLON  &kp UNDER  &kp LESS_THAN   &kp GT            &kp PIPE                &kp AMPERSAND          &kp EXCL           &kp EQUAL        &kp DOLLAR         &kp SEMI      &kp TILDE
@@ -43,7 +43,7 @@
             >;
         };
 
-        media {
+        mac_media {
             bindings = <
 &bt BT_CLR    &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4    &kp C_VOLUME_DOWN  &kp C_VOLUME_UP  &kp UP_ARROW      &kp C_BRIGHTNESS_DEC  &kp C_BRIGHTNESS_INC               &trans
 &trans        &trans        &trans        &trans        &trans        &trans          &kp C_MUTE         &kp LEFT_ARROW   &kp DOWN_ARROW    &kp RIGHT_ARROW       &kp C_AC_DESKTOP_SHOW_ALL_WINDOWS  &kp C_AC_DESKTOP_SHOW_ALL_APPLICATIONS
@@ -52,7 +52,7 @@
             >;
         };
 
-        shortcuts {
+        mac_shortcuts {
             bindings = <
 &trans  &trans     &trans     &trans     &kp LG(R)  &trans           &trans  &kp LS(LG(NUMBER_4))  &kp LA(UP_ARROW)    &trans         &trans  &trans
 &trans  &kp LG(Q)  &kp LG(S)  &kp LG(D)  &kp LG(F)  &kp LG(LC(F))    &trans  &kp LA(LEFT_ARROW)    &kp LA(DOWN_ARROW)  &kp LA(RIGHT)  &trans  &trans
@@ -61,7 +61,61 @@
             >;
         };
 
-        function {
+        mac_function {
+            bindings = <
+&trans  &trans  &trans  &trans  &trans  &trans    &kp F1  &kp F2   &kp F3   &kp F4   &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &kp F5  &kp F6   &kp F7   &kp F8   &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &kp F9  &kp F10  &kp F11  &kp F12  &trans  &trans
+                        &trans  &trans  &trans    &trans  &trans   &trans
+            >;
+        };
+
+        win_default {
+            bindings = <
+&kp TAB           &kp Q  &kp W  &kp E           &kp R     &kp T          &kp Y        &kp U        &kp I       &kp O    &none     &kp BACKSPACE
+&kp LEFT_CONTROL  &kp A  &kp S  &kp D           &kp F     &kp G          &kp H        &kp J        &kp K       &kp L    &kp P     &kp SEMI
+&kp LEFT_ALT      &kp Z  &kp X  &kp C           &kp V     &kp B          &kp N        &kp M        &kp COMMA   &kp DOT  &kp FSLH  &kp ESC
+                                &kp LEFT_SHIFT  &kp LCMD  &lt 1 SPACE    &lt 2 ENTER  &lt 4 GRAVE  &lt 5 APOS
+            >;
+        };
+
+        win_numbers {
+            bindings = <
+&trans  &trans  &trans  &trans      &trans     &trans    &kp EQUAL  &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &trans     &trans
+&trans  &trans  &trans  &kp PERIOD  &kp COMMA  &trans    &kp PLUS   &kp NUMBER_4  &kp N5        &kp NUMBER_6  &kp STAR   &trans
+&trans  &trans  &trans  &trans      &trans     &trans    &kp MINUS  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp SLASH  &trans
+                        &trans      &trans     &trans    &trans     &trans        &kp NUMBER_0
+            >;
+        };
+
+        win_symbols {
+            bindings = <
+&trans  &kp AT     &kp CARET  &kp MINUS       &kp PLUS          &kp STAR                &kp SLASH              &kp BACKSLASH      &kp HASH         &kp PERCENT        &trans        &trans
+&trans  &kp COLON  &kp UNDER  &kp LESS_THAN   &kp GT            &kp PIPE                &kp AMPERSAND          &kp EXCL           &kp EQUAL        &kp DOLLAR         &kp SEMI      &kp TILDE
+&trans  &kp GRAVE  &kp APOS   &kp LEFT_BRACE  &kp LEFT_BRACKET  &kp LEFT_PARENTHESIS    &kp RIGHT_PARENTHESIS  &kp RIGHT_BRACKET  &kp RIGHT_BRACE  &kp DOUBLE_QUOTES  &kp QUESTION  &trans
+                              &trans          &trans            &trans                  &trans                 &trans             &trans
+            >;
+        };
+
+        win_media {
+            bindings = <
+&bt BT_CLR    &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4    &kp C_VOLUME_DOWN  &kp C_VOLUME_UP  &kp UP_ARROW      &kp C_BRIGHTNESS_DEC  &kp C_BRIGHTNESS_INC               &trans
+&trans        &trans        &trans        &trans        &trans        &trans          &kp C_MUTE         &kp LEFT_ARROW   &kp DOWN_ARROW    &kp RIGHT_ARROW       &kp C_AC_DESKTOP_SHOW_ALL_WINDOWS  &kp C_AC_DESKTOP_SHOW_ALL_APPLICATIONS
+&out OUT_TOG  &trans        &trans        &trans        &trans        &trans          &trans             &kp C_PREV       &kp C_PLAY_PAUSE  &kp C_NEXT            &trans                             &trans
+                                          &trans        &trans        &trans          &trans             &trans           &trans
+            >;
+        };
+
+        win_shortcuts {
+            bindings = <
+&trans  &trans     &trans     &trans     &kp LG(R)  &trans           &trans  &kp LS(LG(NUMBER_4))  &kp LA(UP_ARROW)    &trans         &trans  &trans
+&trans  &kp LG(Q)  &kp LG(S)  &kp LG(D)  &kp LG(F)  &kp LG(LC(F))    &trans  &kp LA(LEFT_ARROW)    &kp LA(DOWN_ARROW)  &kp LA(RIGHT)  &trans  &trans
+&trans  &kp LG(Z)  &kp LG(X)  &kp LG(C)  &kp LG(V)  &trans           &trans  &trans                &trans              &trans         &trans  &trans
+                              &trans     &trans     &trans           &trans  &trans                &trans
+            >;
+        };
+
+        win_function {
             bindings = <
 &trans  &trans  &trans  &trans  &trans  &trans    &kp F1  &kp F2   &kp F3   &kp F4   &trans  &trans
 &trans  &trans  &trans  &trans  &trans  &trans    &kp F5  &kp F6   &kp F7   &kp F8   &trans  &trans
