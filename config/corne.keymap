@@ -16,10 +16,10 @@
         base {
             label = "Base";
             bindings = <
-&kp CAPS   &kp Q       &kp W           &kp E             &kp R        &kp T          &kp Y        &kp U        &kp I         &kp O       &none       &kp BACKSPACE
-&kp MINUS  &mt A LGUI  &mt S LEFT_ALT  &mt D LEFT_SHIFT  &mt F LCTRL  &kp G          &kp H        &mt J RCTRL  &mt K RSHIFT  &mt L RALT  &mt P RGUI  &kp SEMI
-&kp UNDER  &kp Z       &kp X           &kp C             &kp V        &kp B          &kp N        &kp M        &kp COMMA     &kp DOT     &kp FSLH    &kp DELETE
-                                       &kp ESCAPE        &lt 2 TAB    &lt 1 SPACE    &lt 3 ENTER  &lt 5 GRAVE  &lt 4 APOS
+&kp CAPS   &kp Q           &kp W           &kp E             &kp R               &kp T          &kp Y        &kp U        &kp I         &kp O            &none       &kp BACKSPACE
+&kp MINUS  &mt LEFT_GUI A  &mt LEFT_ALT S  &mt LEFT_SHIFT D  &mt LEFT_CONTROL F  &kp G          &kp H        &mt RCTRL J  &mt RSHIFT K  &mt RIGHT_ALT L  &mt RGUI P  &kp SEMI
+&kp UNDER  &kp Z           &kp X           &kp C             &kp V               &kp B          &kp N        &kp M        &kp COMMA     &kp DOT          &kp FSLH    &kp DELETE
+                                           &kp ESCAPE        &lt 2 TAB           &lt 1 SPACE    &lt 3 ENTER  &lt 5 GRAVE  &lt 4 APOS
             >;
         };
 
